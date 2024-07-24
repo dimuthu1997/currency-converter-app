@@ -198,22 +198,11 @@ class _HomePageState extends State<HomePage> {
                   shrinkWrap: true,
                   itemCount: listTiles.length,
                   itemBuilder: (context, index) {
-                    final amount =
-                        double.tryParse(amountController.text) ?? 0.0;
-                    final currencyCode =
-                        (listTiles[index] as ListTile).title ?? "";
-                    final conversionRate = conversionRates[currencyCode] ?? 1.0;
-                    final convertedAmount = amount * conversionRate;
                     return Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         listTiles[index],
                         const SizedBox(height: 4.0),
-                        Text(
-                          '$convertedAmount ${currencyCode}',
-                          style: const TextStyle(
-                              color: Colors.white, fontSize: 14),
-                        ),
                       ],
                     );
                   },

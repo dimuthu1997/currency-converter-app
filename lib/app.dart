@@ -12,7 +12,7 @@ class AssignmentApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Assignment',
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.dark,
       theme: themeProvider.theme,
       home: const HomePage(),
     );
