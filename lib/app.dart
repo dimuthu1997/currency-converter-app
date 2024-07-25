@@ -1,4 +1,4 @@
-import 'package:currency_converter/screens/home.dart';
+import 'package:currency_converter/screens/currency_converter_page.dart';
 import 'package:currency_converter/services/providers/theme_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -14,7 +14,7 @@ class AssignmentApp extends StatelessWidget {
       title: 'Assignment',
       themeMode: ThemeMode.dark,
       theme: themeProvider.theme,
-      home: const HomePage(),
+      home: const CurrencyConverterPage(),
     );
   }
 }
